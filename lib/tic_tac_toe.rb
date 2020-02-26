@@ -67,6 +67,18 @@ class TicTacToe
       turn 
       return
     end
+    
+    def won?
+      WIN_COMBINATIONS.each do |combo| 
+        if @board[combo[0]] == @board[combo[1]]
+          if @board[combo[1]] == @board[combo[2]]
+            if @board[combo[2]] == "X" || @board[combo[2]] == "O"
+              true
+            end
+          end
+        end
+      end
+    end 
   end
   
 end
