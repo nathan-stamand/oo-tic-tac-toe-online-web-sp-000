@@ -74,14 +74,6 @@ class TicTacToe
         if @board[combo[1]] == @board[combo[2]]
           if @board[combo[2]] == "X" || @board[combo[2]] == "O"
             combo
-          end
-        end
-      elsif full?
-        false
-      end
-    end
-  end 
-
   
   def full? 
     @board.none?(" ")
