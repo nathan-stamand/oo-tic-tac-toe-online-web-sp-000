@@ -118,6 +118,6 @@ class TicTacToe
         "Congratulations, #{winner}!"
       end
     end
-  end
+
    
 end
