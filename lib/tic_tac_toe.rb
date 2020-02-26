@@ -96,4 +96,18 @@ class TicTacToe
     draw? || won?
   end
   
+  def winner 
+    if over?
+      if draw?
+        nil 
+      else 
+        if current_player == "X"
+          "O"
+        else 
+          "X"
+        end
+      end
+    end
+  end
+  
 end
