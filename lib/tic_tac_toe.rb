@@ -118,10 +118,10 @@ class TicTacToe
     else
       if won? 
         puts "Congratulations, #{winner}!"
-        break
+        return
       else 
         puts "Cat's Game!"
-        break
+        return
       end 
     end
   end
