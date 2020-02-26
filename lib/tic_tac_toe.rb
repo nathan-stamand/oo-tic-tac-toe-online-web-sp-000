@@ -26,4 +26,8 @@ class TicTacToe
     num.to_i - 1 
   end 
   
+  def move(space, character)
+    @board[input_to_index(space)] = character
+  end
+  
 end
