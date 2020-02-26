@@ -31,6 +31,23 @@ class TicTacToe
   end
   
   def position_taken?(space)
+    if @board[space] == "X" || @board[space] == "O"
+      true 
+    else 
+      false 
+    end
   end
+  
+  def valid_move?(space)
+    if space > 0 && space < 10
+      if !position_taken?(space)
+        true
+      else 
+        false 
+      end
+    else 
+      false 
+    end
+  end 
   
 end
