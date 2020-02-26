@@ -113,7 +113,8 @@ class TicTacToe
     puts "Please enter 1-9:"
     turn 
     if !over?
-      play 
+      play
+      return
     else
       if won? 
         puts "Congratulations, #{winner}!"
