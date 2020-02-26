@@ -116,10 +116,8 @@ class TicTacToe
         "Cat's Game!"
       elsif won? 
         "Congratulations, #{winner}!"
-      else
-        play 
-        return 
       end
     end
-   end
+  end
+   
 end
