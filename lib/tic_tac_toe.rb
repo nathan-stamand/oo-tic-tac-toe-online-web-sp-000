@@ -115,13 +115,6 @@ class TicTacToe
     if !over?
       play
       return
-    else
-      if won? 
-        return "Congratulations, #{winner}!"
-        
-      else 
-        return "Cat's Game!"
-      end 
     end
   end
 
