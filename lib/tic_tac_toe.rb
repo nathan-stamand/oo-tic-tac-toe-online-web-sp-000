@@ -88,4 +88,8 @@ class TicTacToe
     @board.none?(" ")
   end
   
+  def draw? 
+    full? && !won? 
+  end
+  
 end
