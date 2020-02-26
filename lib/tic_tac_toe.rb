@@ -56,4 +56,15 @@ class TicTacToe
     end
   end
   
+  def turn 
+    puts "#{current_player}, your turn."
+    current_move = input_to_index(gets.strip) 
+    if valid_move?(current_move)
+      move(current_move, current_player)
+    else 
+      turn 
+      return
+    end
+  end
+  
 end
