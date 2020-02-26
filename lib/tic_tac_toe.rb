@@ -67,6 +67,7 @@ class TicTacToe
       turn 
       return
     end
+  end
     
   def won?
     WIN_COMBINATIONS.each do |combo| 
@@ -79,7 +80,7 @@ class TicTacToe
       end
     end
   end
-end
+
 
   def full? 
     @board.none?(" ")
