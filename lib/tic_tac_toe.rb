@@ -39,7 +39,7 @@ class TicTacToe
   end
   
   def valid_move?(space)
-    if space > 0 && space < 10 && !position_taken?(space)
+    if space >= 0 && space < 10 && !position_taken?(space)
       true
     end
   end
