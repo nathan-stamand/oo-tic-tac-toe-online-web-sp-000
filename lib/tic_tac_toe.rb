@@ -27,7 +27,9 @@ class TicTacToe
   end 
   
   def move(space, character)
-    @board[input_to_index(space)] = character
+    @board[space] = character
   end
+  
+  def position_taken?(space)
   
 end
