@@ -31,5 +31,6 @@ class TicTacToe
   end
   
   def position_taken?(space)
+  end
   
 end
