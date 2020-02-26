@@ -74,8 +74,14 @@ class TicTacToe
           if @board[combo[1]] == @board[combo[2]]
             if @board[combo[2]] == "X" || @board[combo[2]] == "O"
               true
+            else
+              false
             end
+          else 
+            false
           end
+        else 
+          false
         end
       end
     end 
