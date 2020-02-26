@@ -117,11 +117,10 @@ class TicTacToe
       return
     else
       if won? 
-        puts "Congratulations, #{winner}!"
-        return
+        return "Congratulations, #{winner}!"
+        
       else 
-        puts "Cat's Game!"
-        return
+        return "Cat's Game!"
       end 
     end
   end
